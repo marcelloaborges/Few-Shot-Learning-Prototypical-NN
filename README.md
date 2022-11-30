@@ -9,7 +9,7 @@ https://www.youtube.com/watch?v=rHGPfl0pvLY&ab_channel=MassimilianoPatacchiola
 It helped me a lot on the process of understanding the idea about the prototypical's working process.
 
 ### Observations:
-- To run the project execute the <b>main.py</b> file.
+- To run the project, unzip the <b>data.zip</b> folder and execute the <b>main.py</b> file.
 - The database is the famous "omniglot". I've changed the structure inside the repository to a format that was easier for me to work on. The "data.zip" file has the structure that I used within this project. Unzip the file before executing the project.
 
 ### Requeriments:
@@ -30,7 +30,7 @@ About the neural network architecture, it is a simple convolutional architecture
 ### The hyperparameters and model:
 - The file with the hyperparameters configuration is the <b>main.py</b>. Look for the comment "HYPERPARAMETERS".
 
-- The actual configuration of the hyperparameters is: 
+- The current configuration of the hyperparameters is: 
   - Learning Rate: 1e-3 (Adam)
   - N_CLASS: 60 (the number of different classes into each batch)
 
