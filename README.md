@@ -9,7 +9,7 @@ https://www.youtube.com/watch?v=rHGPfl0pvLY&ab_channel=MassimilianoPatacchiola
 It helped me a lot on the process of understanding the idea about the prototypical's working process.
 
 ### Observations:
-- To run the project just execute the <b>main.py</b> file.
+- To run the project execute the <b>main.py</b> file.
 - The database is the famous "omniglot". I've changed the structure inside the repository to a format that was easier for me to work on. The "data.zip" file has the structure that I used within this project. Unzip the file before executing the project.
 
 ### Requeriments:
@@ -19,11 +19,11 @@ It helped me a lot on the process of understanding the idea about the prototypic
 - torchvision: 0.7.0+cu101
 
 ## The problem:
-Classification problems usually require big databases with a good distribution of each class, especially if the problem is related to image classification. Thinking about it I've started some studies on meta-learning aiming to find a technique that could help with this limitation. Why do I need so many images to build a classifier whether humans can do it just by looking at a few examples? 
-So the problem here is: It's possible to build a classifier that can classify images looking just over a few examples of the whole context.
+Classification problems usually require big databases with a good distribution of each class, especially if the problem is related to image classification. Thinking about it, I've started some studies on meta-learning aiming to find a technique that could help with this limitation. Why do I need so many images to build a classifier whether humans can do it just by looking at a few examples? 
+The problem here is: is it possible to build a classifier that can classify images looking just over a few examples of the whole context?
 
 ## The solution:
-As result, I've found this technique - Few-shot learning: Prototypical Networks. The big thing about this technique is the way you "teach" the model. Instead of apply correction creating the correlation between the image and its class, the correction is made in a way where a correlation between two images from the same class be built. In other words, if I provide the model two images from the same class, it must say that these images are "equal". Check the links I've provided above for more details.
+As result, I've found this technique - Few-shot learning: Prototypical Networks. The big thing about this technique is the way you "teach" the model. Instead of applying correction creating a correlation between the image and its class, the correction is made in a way where a correlation between two images from the same class is built. In other words, if I provide the model two images from the same class, it must say that these images are "equal". Check the links I've provided above for more details.
 
 About the neural network architecture, it is a simple convolutional architecture with a flattened output. As I've said, the big thing in Prototypical Netwroks is how to compute the error.
 
