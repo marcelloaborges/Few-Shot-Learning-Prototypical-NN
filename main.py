@@ -189,7 +189,7 @@ def train_eval():
                 xq = []
                 
                 xs.append( [ s['tensor']['xs'] for s in batch ] )
-                xq.append( [ q['tensor']['xs'] for q in batch ] )
+                xq.append( [ q['tensor']['xq'] for q in batch ] )
 
                 xs = torch.from_numpy( np.array( xs ) ).float().to(DEVICE)
                 xq = torch.from_numpy( np.array( xq ) ).float().to(DEVICE)
